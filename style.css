@@ -1,0 +1,121 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-sarif;
+	color: #333;
+	line-height: 1.6;
+	background: #f8f9fa;
+}
+
+.container {
+	max-width: 1200px;
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	border-radius: 10px;
+}
+/* Header Styles */
+.profile-img img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border: 3px solid #00caff;
+	padding: 3px;
+}
+.social-links a {
+	color: #00caff;
+	font-size: 1.5rem;
+	transition: color 0.3s ease;
+}
+.social-links a:hover {
+	color: rgb(61, 55, 236);
+}
+
+/* Contact Styles */
+.contact-info {
+	background-color: #f8f9fa;
+	padding: 1rem;
+	border-radius: 5px;
+}
+.contact-info i {
+	color: #00caff;
+	margin-right: 0.5rem;
+}
+
+/* Section Style */
+.section-title {
+	color: #00caff;
+	border-bottom: 2px solid #00caff;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.8rem;
+}
+
+/* Experience Styles */
+.experience-item {
+	margin-bottom: 1.5rem;
+}
+
+.experience-item h3 {
+	color: rgb(31, 75, 119);
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+	padding-left: 1.2rem;
+}
+
+/* Projects Styles */
+.card {
+	transition: transform 0.3s ease;
+	border: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+/* Skills Styles */
+.skill-item {
+	margin-bottom: 1rem;
+}
+.progress {
+	height: 10px;
+	border-radius: 5px;
+	background-color: #e9ecef;
+	overflow: hidden;
+}
+.progress-bar {
+	background-color: #00caff;
+	width: 0;
+	transition: width 1.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+	.section-title {
+		font-size: 1.5rem;
+	}
+	.contact-info .col-md-4 {
+		margin-bottom: 1rem;
+	}
+}
+
+/* Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+section {
+	animation: fadeIn 0.5s ease-out;
+}
